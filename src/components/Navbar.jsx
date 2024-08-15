@@ -8,7 +8,7 @@ function NavBar() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (cityInput.trim()) {
-      navigate("/city/${cityInput}");
+      navigate(`/city/${cityInput}`);
       setCityInput("");
     }
   };
@@ -17,16 +17,13 @@ function NavBar() {
     <nav>
       <ul>
         <li>
-          {" "}
-          <Link to="/city/Los Angeles"> Los Angeles </Link>{" "}
+          <Link to="/city/Los Angeles"> Los Angeles </Link>
         </li>
         <li>
-          {" "}
-          <Link to="/city/Boston"> Boston </Link>{" "}
+          <Link to="/city/Boston"> Boston </Link>
         </li>
         <li>
-          {" "}
-          <Link to="/city/New York"> New York </Link>{" "}
+          <Link to="/city/New York"> New York </Link>
         </li>
       </ul>
       <form onSubmit={handleSearch} style={{ marginTop: "10px" }}>
@@ -36,6 +33,7 @@ function NavBar() {
           onChange={(e) => setCityInput(e.target.value)}
           placeholder="Enter a city name"
         />
+        <button type="submit">Search</button>
       </form>
     </nav>
   );

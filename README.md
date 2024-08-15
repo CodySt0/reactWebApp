@@ -1,3 +1,11 @@
+The goal of this app was to build a simple weather app that a user can input a city and get current information about the city such as a weather, temperature, and a description displayed to them. I also tried to implement creating links to other cites close to the searched city that a user can click. A problem that I ran into was a 401 error with the API call that I couldn't figure out how to fix, so unfortunately I was not able to get any weather data.
+
+The approach I took and some of the technologies I used were React and JSX to make it easier to write the project in components. I also used Axios to use to make get requests, and error handling for the API. I created a component for the navbar and a pages for the city weather data.
+
+I'm not very proud that it doesn't work, but thank you for taking a look at my project!
+
+-Cody
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
